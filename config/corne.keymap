@@ -33,10 +33,10 @@
         default_layer {
             label = "0";
             bindings = <
-&kp TAB         &kp Q           &kp W               &kp E                &kp R                    &kp T          &kp Y        &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp ESC         &hm LEFT_ALT A  &hm LEFT_CONTROL S  &hm LEFT_SHIFT D     &hm LEFT_META F          &kp G          &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LEFT_SHIFT  &kp Z           &kp X               &kp C                &kp V                    &kp B          &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp GRAVE
-                                                    &mt LEFT_SHIFT CAPS  &mt LEFT_META BACKSPACE  &lt 2 ENTER    &lt 1 SPACE  &kp MINUS  &lt 3 SQT
+&kp TAB         &kp Q           &kp W               &kp E                &kp R                    &kp T          &kp Y        &kp U            &kp I              &kp O                &kp P               &kp BSPC
+&kp ESC         &hm LEFT_ALT A  &hm LEFT_CONTROL S  &hm LEFT_SHIFT D     &hm LEFT_META F          &kp G          &kp H        &hm LEFT_META J  &hm RIGHT_SHIFT K  &hm RIGHT_CONTROL L  &hm RIGHT_ALT SEMI  &kp ENTER
+&kp LEFT_SHIFT  &kp Z           &kp X               &kp C                &kp V                    &kp B          &kp N        &kp M            &kp COMMA          &kp DOT              &kp FSLH            &kp GRAVE
+                                                    &mt LEFT_SHIFT CAPS  &mt LEFT_META BACKSPACE  &lt 2 ENTER    &lt 1 SPACE  &kp MINUS        &lt 3 SQT
             >;
         };
 
@@ -53,20 +53,20 @@
         arrow_layer {
             label = "2";
             bindings = <
-&none  &none           &kp UP_ARROW    &none      &sys_reset  &none    &none     &none     &none         &none      &none  &none
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none       &none    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none  &none
-&none  &none           &none           &none      &none       &none    &none     &none     &none         &none      &none  &none
-                                       &none      &none       &none    &none     &none     &none
+&none  &none  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &none    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
+&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &none  &none           &none           &none            &none    &none           &mkp MB4        &mkp MB5      &none            &none  &none
+                              &none           &none            &none    &none           &none           &none
             >;
         };
 
         bt_layer {
             label = "3";
             bindings = <
-&none         &none         &none           &none         &none         &none          &none       &none       &none       &none       &none       &none
-&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR     &none       &none       &none       &none       &none       &none
-&none         &none         &none           &none         &none         &bootloader    &none       &none       &none       &none       &none       &none
-                                            &none         &none         &none          &none       &none       &none
+&none         &none         &none         &none         &none         &none          &kp C_BRI_DEC  &kp C_BRI_UP  &none  &none  &none  &none
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR     &none          &none         &none  &none  &none  &none
+&none         &none         &none         &none         &none         &bootloader    &none          &none         &none  &none  &none  &none
+                                          &none         &none         &none          &none          &none         &none
             >;
         };
     };
