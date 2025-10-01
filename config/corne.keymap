@@ -61,10 +61,10 @@
         default_layer {
             label = "0";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E      &kp R          &kp T               &kp Y        &kp U        &kp I      &kp O    &kp P     &kp BSPC
-&kp ESC         &kp A  &kp S  &kp D      &kp F          &kp G               &kp H        &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V          &kp B               &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp GRAVE
-                              &lt 3 SQT  &kp BACKSPACE  &lt 2 UNDERSCORE    &lt 1 EQUAL  &lt 1 SPACE  &kp ENTER
+&kp TAB         &kp Q  &kp W  &kp E      &kp R                    &kp T               &kp Y        &kp U           &kp I      &kp O    &kp P     &kp BSPC
+&kp ESC         &kp A  &kp S  &kp D      &kp F                    &kp G               &kp H        &kp J           &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V                    &kp B               &kp N        &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp GRAVE
+                              &lt 3 SQT  &mt BACKSPACE LEFT_META  &lt 2 UNDERSCORE    &lt 1 SPACE  &kp UNDERSCORE  &kp ENTER
             >;
         };
 
