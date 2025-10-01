@@ -91,9 +91,9 @@
         bt_layer {
             label = "3";
             bindings = <
-&kp ESC       &kp LS(N1)    &kp LS(N2)      &kp LS(N3)    &kp LS(N4)    &none          &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
-&none         &none         &kp LEFT_ARROW  &kp DEL       &bt BT_SEL 0  &bt BT_CLR     &none       &none       &none       &none       &none       &none
-&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &none         &bootloader    &none       &none       &none       &none       &none       &none
+&none         &none         &none           &none         &none         &none          &none       &none       &none       &none       &none       &none
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR     &none       &none       &none       &none       &none       &none
+&none         &none         &none           &none         &none         &bootloader    &none       &none       &none       &none       &none       &none
                                             &none         &none         &none          &none       &none       &none
             >;
         };
