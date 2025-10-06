@@ -33,40 +33,40 @@
         default_layer {
             label = "alpha";
             bindings = <
-&kp TAB         &kp Q           &kp W               &kp E                &kp R                    &kp T          &kp Y        &kp U            &kp I              &kp O                &kp P                &kp BSPC
-&kp ESC         &hm LEFT_ALT A  &hm LEFT_CONTROL S  &hm LEFT_SHIFT D     &hm LEFT_META F          &kp G          &kp H        &hm LEFT_META J  &hm RIGHT_SHIFT K  &hm RIGHT_CONTROL L  &hm RIGHT_ALT COLON  &kp ENTER
-&kp LEFT_SHIFT  &kp Z           &kp X               &kp C                &kp V                    &kp B          &kp N        &kp M            &kp COMMA          &kp DOT              &kp FSLH             &kp GRAVE
-                                                    &mt LEFT_SHIFT CAPS  &mt LEFT_META BACKSPACE  &lt 2 ENTER    &lt 1 SPACE  &kp MINUS        &lt 3 SQT
+&kp TAB         &kp Q           &kp W               &kp E             &kp R                    &kp T          &kp Y        &kp U            &kp I              &kp O                &kp P                &kp BSPC
+&kp ESC         &hm LEFT_ALT A  &hm LEFT_CONTROL S  &hm LEFT_SHIFT D  &hm LEFT_META F          &kp G          &kp H        &hm LEFT_META J  &hm RIGHT_SHIFT K  &hm RIGHT_CONTROL L  &hm RIGHT_ALT COLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z           &kp X               &kp C             &kp V                    &kp B          &kp N        &kp M            &kp COMMA          &kp DOT              &kp FSLH             &kp GRAVE
+                                                    &kp LEFT_SHIFT    &mt LEFT_META BACKSPACE  &lt 2 ENTER    &lt 1 SPACE  &kp MINUS        &lt 3 SQT
             >;
         };
 
         number_layer {
             label = "num";
             bindings = <
-&trans           &trans       &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE    &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp ASTERISK   &trans
-&kp DOLLAR       &kp PERCENT  &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMICOLON  &trans
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans         &trans
-                                         &trans                &trans                 &trans       &trans     &trans        &trans
+&trans           &kp AMPERSAND  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE    &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp ASTERISK   &trans
+&kp DOLLAR       &kp PERCENT    &kp CARET      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMICOLON  &trans
+&kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans         &trans
+                                               &trans                &trans                 &trans       &trans     &trans        &trans
             >;
         };
 
         arrow_layer {
             label = "nav";
             bindings = <
-&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans    &msc SCRL_RIGHT    &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT   &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans    &mkp LCLK          &mkp MB4        &mkp MB5        &trans           &trans  &trans
-                                &trans          &trans           &trans    &kp RIGHT_CONTROL  &trans          &trans
+&trans  &trans        &mkp RCLK         &mmv MOVE_UP    &mkp LCLK        &trans    &msc SCRL_RIGHT    &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT   &trans  &trans
+&trans  &trans        &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans
+&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHIFT      &kp LEFT_META    &trans    &mkp LCLK          &mkp MB4        &mkp MB5        &trans           &trans  &trans
+                                        &trans          &trans           &trans    &kp RIGHT_CONTROL  &trans          &trans
             >;
         };
 
         bt_layer {
             label = "bt";
             bindings = <
-&none         &none         &none         &none         &none         &none          &kp C_BRI_MIN  &kp C_BRI_DN       &kp C_BRI_UP     &kp C_BRI_MAX  &none  &none
-&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR     &kp K_MUTE     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none          &none  &none
-&none         &none         &none         &none         &none         &bootloader    &none          &none              &none            &none          &none  &none
-                                          &none         &none         &none          &none          &none              &none
+&none         &none         &none         &none         &none         &none          &kp C_BRIGHTNESS_MINIMUM  &kp C_BRI_DN       &kp C_BRI_UP     &kp C_BRIGHTNESS_MAXIMUM  &none  &none
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none          &kp K_MUTE                &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none                     &none  &none
+&bt BT_CLR    &none         &none         &none         &none         &bootloader    &none                     &none              &none            &none                     &none  &none
+                                          &none         &none         &none          &none                     &none              &none
             >;
         };
     };
