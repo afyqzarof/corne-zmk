@@ -31,7 +31,7 @@
         max_brightness: max_brightness {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP>;
+            bindings = <&kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_BRI_UP &kp C_BRIGHTNESS_INC &kp C_BRI_UP &kp C_BRI_UP>;
             label = "MAX_BRIGHTNESS";
         };
     };
